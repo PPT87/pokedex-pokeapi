@@ -1,3 +1,49 @@
-.App{
-  background-color: blue;
+body{
+  font-family:'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
 }
+
+.header-block{
+  align-items: center;
+  background-color: rgb(19, 168, 255);
+  display: flex;
+  flex-direction: column;
+  height: 270px;
+}
+
+.header-block h1{
+  color: white;
+  font-size: 80px;
+  margin: 40px 0 15px 0 ;
+}
+
+.inputs{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.inputs input{
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 20px;
+  height: 20px;
+  margin-right: 10px;
+  width: 250px;
+  padding: 10px;
+}
+
+.inputs button{
+  background-color: rgb(255, 61, 61);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  height: 42px;
+  width: 150px;
+}
+
+
+
