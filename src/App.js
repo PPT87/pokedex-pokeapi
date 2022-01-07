@@ -53,13 +53,20 @@ const App = () => {
         </button>
         </div>
     </form>
-        <div className='display-block'>
+        <div className='display-block'> 
+        {!displayPokemon ? (
+        <h1>Search a pokémon to start!</h1>
+        ) : (
+          <>
           <span><img src={pokemon.frontImg} alt='front image of pokemon'/>  <img src={pokemon.backImg} alt= 'back image of pokemon' /></span>
             <h1>Name: {pokemon.name}</h1>
             <h2>Type: {pokemon.type}</h2>
             <h2>HP: {pokemon.hp}</h2>
             <h2>Attack: {pokemon.attack}</h2>
             <h2>Defense: {pokemon.defense}</h2>
+
+          </>
+        )}
         </div>
       </div>
     </>
