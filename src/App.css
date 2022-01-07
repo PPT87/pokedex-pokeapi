@@ -5,15 +5,22 @@ body{
 }
 
 .display-block{
-  background-color: aliceblue;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  height: 400px;
-  width: auto;
 }
 
 .display-block img{
+  margin: 0;
   width: 250px;
+}
+
+.display-block h1{
+  margin: 0;
+}
+
+.display-block h2{
+  margin: 0;
 }
 
 .header-block{
