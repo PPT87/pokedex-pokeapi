@@ -20,7 +20,8 @@ const App = () => {
 
   const searchPokemon = e => {
     e.preventDefault()
-    Axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`).then((response)=> {
+    Axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
+    .then((response)=> {
       setPokemon({
         frontImg: response.data.sprites.front_default,
         backImg: response.data.sprites.back_default,
@@ -58,13 +59,12 @@ const App = () => {
         <h1>Search a pokémon to start!</h1>
         ) : (
           <>
-          <span><img src={pokemon.frontImg} alt='front image of pokemon'/>  <img src={pokemon.backImg} alt= 'back image of pokemon' /></span>
+          <span><img src={pokemon.frontImg} alt='front view of pokemon'/>  <img src={pokemon.backImg} alt= 'back view of pokemon' /></span>
             <h1>Name: {pokemon.name}</h1>
             <h2>Type: {pokemon.type}</h2>
             <h2>HP: {pokemon.hp}</h2>
             <h2>Attack: {pokemon.attack}</h2>
             <h2>Defense: {pokemon.defense}</h2>
-
           </>
         )}
         </div>
