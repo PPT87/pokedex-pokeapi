@@ -15,7 +15,7 @@ const App = () => {
   })
 
   const handleChange = e => {
-    setPokemonName(e.target.value);
+    setPokemonName(e.target.value.toLowerCase());
   };
 
   const searchPokemon = e => {
